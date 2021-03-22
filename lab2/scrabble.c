@@ -39,27 +39,27 @@ int compute_score(string word)
     //return the number of points for the word
     //ignore non-letter
     //handle both upper and lowercase letters
-    int eile_arejuj;
+    int index_in_arr;
     int sum = 0;
 
     for (int i = 0, n = strlen(word); i < n; i++)
     {
         if (isupper(word[i]))
         {
-            eile_arejuj = word[i] - 'A';    //tikrinam pagal ASCII
-            eile_arejuj = POINTS[eile_arejuj];
+            index_in_arr = word[i] - 'A';    //tikrinam pagal ASCII
+            index_in_arr = POINTS[index_in_arr];
         }
         else if (islower(word[i]))
         {
-            eile_arejuj = word[i] - 'a';
-            eile_arejuj = POINTS[eile_arejuj];
+            index_in_arr = word[i] - 'a';
+            index_in_arr = POINTS[index_in_arr];
         }
         else 
         {
-            eile_arejuj = 0;
+            index_in_arr = 0;
         }
         
-        sum = sum + eile_arejuj;
+        sum = sum + index_in_arr;
     }
    
     return sum;
