@@ -4,6 +4,14 @@
 #include <string.h>
 #include <math.h>
 
+/**
+ * Implement a program that computes the approximate grade level needed to comprehend some text.
+ * One such readability test is the Coleman-Liau index. 
+ * Meaning, what (U.S.) grade level is needed to understand the text. The formula is: 
+ * index = 0.0588 * L - 0.296 * S - 15.8
+ * Here, L is the average number of letters per 100 words in the text, 
+ * and S is the average number of sentences per 100 words in the text.
+ * */
 
 int count_letters(string text);
 int count_words(string text);
