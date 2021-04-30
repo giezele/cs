@@ -14,7 +14,9 @@ double count_factorial2(double n);
 
 int main(void)
 {
-    double number = get_int("number: ");
+    double number;
+    printf("Enter a positive number: ");
+    scanf("%lf", &number);
     double factorial1 = count_factorial1(number);
     printf("count_factorial1: %f\n", factorial1);
     double factorial2 = count_factorial2(number);
@@ -22,6 +24,7 @@ int main(void)
 
 }
 
+//recursion
 double count_factorial1(double n)
 {
     if (n == 1)
@@ -30,6 +33,7 @@ double count_factorial1(double n)
         return n * count_factorial1(n-1);
 }
 
+//itaration
 double count_factorial2(double n)
 {
     double product = 1;
