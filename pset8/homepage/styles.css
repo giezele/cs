@@ -1,0 +1,251 @@
+body {
+    font-family: 'Montserrat', 'Quicksand' sans-serif;
+}
+* {
+    box-sizing: border-box;
+    /*outline: solid 1px red;*/
+}
+section {
+    width: 100%;
+}
+.hero {
+    background-image: url(img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hero_cust {
+    background-color: #284C80;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: .5em;
+    font-size: 1.1rem;
+}
+li a:hover {
+    color: #ffffff;
+    /*font-size: 1.2rem;*/
+    text-decoration: none;
+
+}
+.cust_input {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.header_text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.header_text h1 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+}
+.header_text p {
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chevron {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+/* filtro sekcija */
+.filter, .gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F6F7;
+    padding: 1em 3em;
+
+}
+.gallery {
+    padding: 12em 3em;
+}
+.filter_check{
+    color: #333333;
+
+}
+input[type='checkbox']{
+    position:absolute;
+    left:-999999px;
+    opacity:0;
+}
+label{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    margin:10px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+label:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+}
+
+[type="checkbox"]:checked+label:before{
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 3px solid #AA9B77;
+    border-bottom: 3px solid #AA9B77;
+    transform: rotate(40deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+}
+#all_paths {
+    text-decoration: none;
+    color: #fff;
+    background-color: #AA9B77;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+}
+.cust_btn {
+    background-color: #AA9B77;
+    border-color: #AA9B77;
+    color: #fff;
+}
+footer {
+
+    background-color: #AA9B77;
+}
+
+.about {
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 2em;
+
+}
+.about_name {
+
+    color: #837659;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1em;
+    z-index: 2;
+    background-color: #AA9B77;
+    transform: translate(0, 50%);
+}
+.about p {
+    border: 1px solid #837659;
+    width: 71%;
+    /*height: 260px;*/
+    padding: 4em;
+    text-align: center;
+}
+.comerce {
+    background-color: #535253;
+    color: #fff;
+    font-weight: bold;
+    padding: 2em;
+    display: flex;
+}
+.comerce p {
+    padding: 0 1em;
+}
+.foot_bott {
+    background-color: #424242;
+    color: #fff;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+.trek {
+    width: 50%;
+    padding: 3em 3em 3em 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+.trek1 {
+    font-weight: bold;
+    padding: 1em 0;
+}
+.design {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+.design ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+.signature {
+    text-align: right;
+    color: #ffffff;
+    padding: .5em;
+    font-size: 1.1rem;
+}
+
+.container {
+    padding: 2em 0;
+}
+.content_text {
+    padding: 5em 0;
+}
+
+
+.header {
+  padding: 2em 5em;
+  background: #535253;
+  color: #f1f1f1;
+  z-index: 4;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
